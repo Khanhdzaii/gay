@@ -332,9 +332,9 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/NamG
 
 local pe = game:GetService("Players").LocalPlayer.Name
 local Window = OrionLib:MakeWindow({
-    Name = "TestHubV2",
+    Name = "Dái Hub V2⚔️",
     IntroEnabled = false,
-    IntroText = "Welcome to TestHubV2, "..pe.."!",
+    IntroText = "Welcome to Dái Hub V2⚔️, "..pe.."!",
     IntroIcon = "rbxassetid://6031094686",
     HidePremium = true, 
     SaveConfig = false, 
@@ -691,7 +691,7 @@ sTab:AddToggle({
 
         spawn(function()
             while getgenv().SeaKinghop do
-                task.wait(0.6) -- Giảm xuống 0.1 giây để kiểm tra nhanh hơn
+                task.wait(0.1) -- Giảm xuống 0.1 giây để kiểm tra nhanh hơn
 
                 local Workspace = game:GetService("Workspace")
                 local workspaceIsland = Workspace.Island -- Định nghĩa workspaceIsland
@@ -4114,16 +4114,16 @@ RunService.RenderStepped:Connect(function()
 end)
 
 hubTab:AddSection({
-    Name = "Cre: ginchao"
+    Name = "Cre: Duy Khánh"
 })
 
 hubTab:AddSection({
-    Name = "TestHubV2 | King Legacy"
+    Name = "Dái Hub V2 | King Legacy"
 })
 
 local HttpService = game:GetService("HttpService")
 local Webhook_HydraChest = "https://discord.com/api/webhooks/1289537659907084319/XzR9iejEWrjtdxxwDIHSPS3V51E6wWhcpPdwstYMo-k1HjV4r4w7fwkcRTkgeYL95Kw5"
-local Webhook_URLshop = {"https://discord.com/api/webhooks/1377690764003246172/VtLXydFSWEy0m-ktDtW2QSqGMfPqQ7QbriB2pMxphXAmvwyx8ao9xzbVrb8pSSsQ_whN"}
+local Webhook_URLshop = {"https://discord.com/api/webhooks/1289537659907084319/XzR9iejEWrjtdxxwDIHSPS3V51E6wWhcpPdwstYMo-k1HjV4r4w7fwkcRTkgeYL95Kw5"}
 if Settings.Webhook_URL2 and Settings.Webhook_URL2 ~= "" then
     table.insert(Webhook_URLshop, Settings.Webhook_URL2)
 end
