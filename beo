@@ -2143,7 +2143,7 @@ local latTab = Window:MakeTab({
     PremiumOnly = false
 })
 local Section = latTab:AddSection({
-	Name = "Hoàng Anh"
+	Name = "Dái"
 })
 latTab:AddTextbox({
     Name = "Webhook Theo Dõi Khi Gặp Rương Hoặc Khi Xong Raid",
@@ -2464,7 +2464,7 @@ local initialGem = 0
 local initialBeli = 0
 
 -- 🏆 Danh sách người chơi đặc biệt
-local specialPlayers = { "ginchao1" }
+local specialPlayers = { "khanhbayacc555" }
 
 -- 📌 Cập nhật bộ đếm thời gian (Update Timer)
 local function updateTimer()
@@ -4276,7 +4276,7 @@ local fields = {
             ["color"] = tonumber(0xff0000),
             ["fields"] = fields,
             ["footer"] = {
-                ["text"] = "TestHub | Thông báo tự động",
+                ["text"] = "Dái Hub | Thông báo tự động",
                 ["icon_url"] = "https://i.imgur.com/gtePhRZ.jpeg"
             },
             ["timestamp"] = os.date("!%Y-%m-%dT%H:%M:%S.000Z", os.time())
