@@ -332,9 +332,9 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/NamG
 
 local pe = game:GetService("Players").LocalPlayer.Name
 local Window = OrionLib:MakeWindow({
-    Name = "Dái Hub V2⚔️",
+    Name = "Sea Hub 🐢|金钱和土地",
     IntroEnabled = false,
-    IntroText = "Welcome to Dái Hub V2⚔️, "..pe.."!",
+    IntroText = "Welcome to Sea Hub 🐢|金钱和土地, "..pe.."!",
     IntroIcon = "rbxassetid://6031094686",
     HidePremium = true, 
     SaveConfig = false, 
@@ -361,7 +361,7 @@ end
 
 if sea(2) then
 local sTab = Window:MakeTab({
-    Name = "Sea Hop Beta ",
+    Name = "Sea Hop Beta 🐢 ",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -388,7 +388,7 @@ local function getBossRoot()
 end
 
 sTab:AddToggle({
-    Name = "Auto Aim Skill HD+SK+GS",
+    Name = "Auto Aim Skill HD+SK+GS 🐢",
     Default = Settings.autoskillsea,
     Callback = function(value)
         getgenv().AutoS = value
@@ -495,7 +495,7 @@ sTab:AddToggle({
 getgenv().AutoSeaKing = false
 
 sTab:AddToggle({
-    Name = "Auto Teleport SK+HD+GS",
+    Name = "Auto Teleport SK+HD+GS 🐢",
     Default = Settings.autoskhd,
     Callback = function(value)
         getgenv().AutoSeaKing = value
@@ -681,7 +681,7 @@ local waitedOnce = false -- Đánh dấu đã chờ 10s chưa
 local initialBeli = game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("beli").Value
  local initialGem = game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("Gem").Value
 sTab:AddToggle({
-    Name = "Auto Hop Thông Minh | Beta (Sea King, Hydra)",
+    Name = "Auto Hop Thông Minh | 🐢🧠 |",
     Default = Settings.autoskhdhop,
     Callback = function(value)
         getgenv().SeaKinghop = value
@@ -691,7 +691,7 @@ sTab:AddToggle({
 
         spawn(function()
             while getgenv().SeaKinghop do
-                task.wait(0) -- Giảm xuống 0.1 giây để kiểm tra nhanh hơn
+                task.wait(0.4) -- Giảm xuống 0.1 giây để kiểm tra nhanh hơn
 
                 local Workspace = game:GetService("Workspace")
                 local workspaceIsland = Workspace.Island -- Định nghĩa workspaceIsland
@@ -883,7 +883,7 @@ end
     end
 })
 sTab:AddSlider({
-    Name = "Thời gian Chờ GS+HD+SK (giây)",
+    Name = "Thời gian Chờ GS+HD+SK 🐢 (giây)",
     Min = 0,
     Max = 300,
     Default = Settings.HopThreshold,
