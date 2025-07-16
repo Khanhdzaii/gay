@@ -691,7 +691,7 @@ sTab:AddToggle({
 
         spawn(function()
             while getgenv().SeaKinghop do
-                task.wait(0.1) -- Giảm xuống 0.1 giây để kiểm tra nhanh hơn
+                task.wait(0) -- Giảm xuống 0.1 giây để kiểm tra nhanh hơn
 
                 local Workspace = game:GetService("Workspace")
                 local workspaceIsland = Workspace.Island -- Định nghĩa workspaceIsland
